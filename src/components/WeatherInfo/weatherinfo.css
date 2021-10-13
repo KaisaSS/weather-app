@@ -1,0 +1,49 @@
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.day-dayname {
+  margin: 15px auto;
+}
+
+.day-logo {
+  margin: auto;
+}
+
+.day-logo p {
+  margin: 15px;
+}
+
+.weather-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px 0 20px 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.weather-info-container p {
+  margin: 15px 0;
+}
+
+.value-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 80%;
+}
+
+.value-container p:first-child {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .weather-info-container {
+    grid-template-columns: 1fr;
+  }
+} ;
