@@ -34,7 +34,7 @@ const Weather = ({ weather }) => {
                 <p>Wind: {day[time].wind.speed} m/s</p>
                 <p>Feels like: {Math.round(day[time].main.feels_like)} &deg;C</p>
               </div>
-              <div className="btn-container">
+              {/* <div className="btn-container">
                 <input
                   type="button"
                   className="hourly-btn"
@@ -43,7 +43,7 @@ const Weather = ({ weather }) => {
                     console.log("hello");
                   }}
                 />
-              </div>
+              </div> */}
             </div>
           );
         })}
